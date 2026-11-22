@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <rect x="0.5" y="0.5" width="31" height="31" rx="6.5" fill="#0C0D12" stroke="rgba(255,255,255,0.18)" stroke-width="1" />
+  <g transform="translate(1.6, 1.15) scale(0.9)">
+    <path
+      d="M2 7H8L12.5 19.5L16 11.5L19.5 19.5L24 7H30L24 26H18.5L16 19L13.5 26H8L2 7Z"
+      fill="#FFFFFF"
+    />
+    <path
+      d="M16 12.5L19 19H13L16 12.5Z"
+      fill="#E10600"
+    />
+  </g>
+</svg>
