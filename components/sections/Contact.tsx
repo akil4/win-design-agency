@@ -33,7 +33,7 @@ export function Contact() {
       newErrors.name = "Name must be at least 2 characters";
     }
 
-    const emailRegex = /.+@.+\..+/;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!formData.email.trim()) {
       newErrors.email = "Please provide your work email";
     } else if (!emailRegex.test(formData.email.trim())) {
