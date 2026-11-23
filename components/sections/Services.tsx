@@ -72,7 +72,7 @@ export function Services() {
             return (
               <div
                 key={sec.sector}
-                className="group relative p-[clamp(1.1rem,1.4vw+0.4vh,1.5rem)] rounded-2xl sm:rounded-3xl bg-white dark:bg-[#12141c] border border-slate-200/90 dark:border-white/10 shadow-sm transition-all duration-300"
+                className="group relative p-[clamp(1.1rem,1.4vw+0.4vh,1.5rem)] rounded-2xl sm:rounded-3xl bg-white dark:bg-[#12141c] border border-slate-200/90 dark:border-white/10 hover:border-slate-400 dark:hover:border-white/30 shadow-sm hover:shadow-2xl hover:-translate-y-0.5 transition-all duration-300"
               >
                 {/* Sector Header with Active Livery Color */}
                 <div className="flex items-center justify-between mb-20 md:mb-28">
