@@ -76,9 +76,9 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className="relative min-h-[100dvh] flex flex-col justify-center py-20 md:py-28 transition-colors">
+    <section id="contact" className="relative min-h-[100dvh] flex flex-col justify-center py-[clamp(1.75rem,3.2vh+0.8vw,3.75rem)] transition-colors">
       {/* Smooth Gradient Divider with Fluid Margin */}
-      <div className="w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mb-20 md:mb-28" aria-hidden="true">
+      <div className="w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mb-[clamp(1.25rem,2vh+0.5vw,2.25rem)]" aria-hidden="true">
         <div className="h-px w-full bg-gradient-to-r from-transparent via-slate-300/50 dark:via-white/10 to-transparent" />
       </div>
 

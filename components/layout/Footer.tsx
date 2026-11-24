@@ -15,7 +15,7 @@ export function Footer() {
         <div className="h-px w-full bg-gradient-to-r from-transparent via-slate-300/50 dark:via-white/10 to-transparent" />
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-[clamp(2rem,3.5vh+0.8vw,4rem)]">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-[clamp(1.5rem,2.5vw,3rem)]">
           {/* Brand Info */}
           <div className="lg:col-span-2 space-y-4">

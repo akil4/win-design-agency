@@ -34,14 +34,14 @@ export function Process() {
   const { activeTeam } = useLivery();
 
   return (
-    <section id="process" className="relative min-h-[100dvh] flex flex-col justify-center py-20 md:py-28 transition-colors">
+    <section id="process" className="relative min-h-[100dvh] flex flex-col justify-center py-[clamp(1.75rem,3.2vh+0.8vw,3.75rem)] transition-colors">
       {/* Smooth Gradient Divider with Fluid Margin */}
-      <div className="w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mb-20 md:mb-28" aria-hidden="true">
+      <div className="w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mb-[clamp(1.25rem,2vh+0.5vw,2.25rem)]" aria-hidden="true">
         <div className="h-px w-full bg-gradient-to-r from-transparent via-slate-300/50 dark:via-white/10 to-transparent" />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-        <div className="max-w-xl mb-20 md:mb-28">
+        <div className="max-w-xl mb-[clamp(1.25rem,2.2vh+0.5vw,2.25rem)]">
           <h2 className="fluid-h2 font-black text-slate-900 dark:text-white uppercase tracking-tight">
             Our Creative Process
           </h2>
@@ -55,7 +55,7 @@ export function Process() {
                 key={item.phase}
                 className="group relative p-[clamp(1.25rem,1.8vw+0.5vh,1.75rem)] rounded-2xl sm:rounded-3xl bg-white dark:bg-[#12141c] border border-slate-200/80 dark:border-white/10 hover:border-slate-400 dark:hover:border-white/30 transition-all duration-300"
               >
-                <div className="flex items-center justify-between mb-20 md:mb-28">
+                <div className="flex items-center justify-between mb-[clamp(0.75rem,1.5vh,1.25rem)]">
                   <div
                     className={`w-9 h-9 rounded-xl flex items-center justify-center shadow-sm transition-all duration-300 group-hover:scale-110 ${
                       activeTeam.id === "vr46-neon" ? "text-slate-950" : "text-white"
@@ -69,7 +69,7 @@ export function Process() {
                   </span>
                 </div>
 
-                <h3 className="fluid-h4 font-bold text-slate-900 dark:text-white mb-20 md:mb-28">
+                <h3 className="fluid-h4 font-bold text-slate-900 dark:text-white mb-[clamp(0.4rem,0.8vh,0.6rem)]">
                   {item.sessionTitle}
                 </h3>
 

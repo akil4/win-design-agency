@@ -46,15 +46,15 @@ export function Services() {
   const { activeTeam } = useLivery();
 
   return (
-    <section id="services" className="relative min-h-[100dvh] flex flex-col justify-center py-20 md:py-28 transition-colors">
+    <section id="services" className="relative min-h-[100dvh] flex flex-col justify-center py-[clamp(1.25rem,2.5vh+0.5vw,2.75rem)] transition-colors">
       {/* Smooth Gradient Divider with Fluid Margin */}
-      <div className="w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mb-20 md:mb-28" aria-hidden="true">
+      <div className="w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mb-[clamp(1rem,1.8vh+0.4vw,1.75rem)]" aria-hidden="true">
         <div className="h-px w-full bg-gradient-to-r from-transparent via-slate-300/50 dark:via-white/10 to-transparent" />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         {/* Section Header with Fluid Typography & Spacing */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 md:mb-28 gap-[var(--space-s-m)]">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-[clamp(1rem,1.8vh+0.4vw,1.75rem)] gap-[var(--space-s-m)]">
           <div className="max-w-xl">
             <h2 className="fluid-h2 font-black text-slate-900 dark:text-white uppercase tracking-tight">
               Design Capabilities. Built for Impact.
@@ -75,7 +75,7 @@ export function Services() {
                 className="group relative p-[clamp(1.1rem,1.4vw+0.4vh,1.5rem)] rounded-2xl sm:rounded-3xl bg-white dark:bg-[#12141c] border border-slate-200/90 dark:border-white/10 hover:border-slate-400 dark:hover:border-white/30 shadow-sm hover:shadow-2xl hover:-translate-y-0.5 transition-all duration-300"
               >
                 {/* Sector Header with Active Livery Color */}
-                <div className="flex items-center justify-between mb-20 md:mb-28">
+                <div className="flex items-center justify-between mb-[clamp(0.5rem,1vh,0.85rem)]">
                   <div className="flex items-center gap-2.5">
                     <div
                       className={`w-8 h-8 rounded-xl flex items-center justify-center shadow-md transition-all duration-300 group-hover:scale-110 ${
@@ -102,7 +102,7 @@ export function Services() {
                   </span>
                 </div>
 
-                <h3 className="fluid-h4 font-bold text-slate-900 dark:text-white mb-20 md:mb-28 flex items-center justify-between">
+                <h3 className="fluid-h4 font-bold text-slate-900 dark:text-white mb-[clamp(0.25rem,0.6vh,0.4rem)] flex items-center justify-between">
                   <span>{sec.title}</span>
                   <ArrowUpRight
                     className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-all duration-200"
@@ -110,7 +110,7 @@ export function Services() {
                   />
                 </h3>
 
-                <p className="fluid-caption text-slate-600 dark:text-slate-400 leading-relaxed mb-20 md:mb-28">
+                <p className="fluid-caption text-slate-600 dark:text-slate-400 leading-relaxed mb-[clamp(0.5rem,1vh,0.85rem)]">
                   {sec.description}
                 </p>
 

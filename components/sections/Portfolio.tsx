@@ -97,14 +97,14 @@ export function Portfolio() {
       : projects.filter((project) => project.category === selectedCategory);
 
   return (
-    <section id="portfolio" className="relative min-h-[100dvh] flex flex-col justify-center py-20 md:py-28 transition-colors">
+    <section id="portfolio" className="relative min-h-[100dvh] flex flex-col justify-center py-[clamp(1.75rem,3.2vh+0.8vw,3.75rem)] transition-colors">
       {/* Smooth Gradient Divider with Fluid Margin */}
-      <div className="w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mb-20 md:mb-28" aria-hidden="true">
+      <div className="w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mb-[clamp(1.25rem,2vh+0.5vw,2.25rem)]" aria-hidden="true">
         <div className="h-px w-full bg-gradient-to-r from-transparent via-slate-300/50 dark:via-white/10 to-transparent" />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 md:mb-28 gap-[var(--space-s-m)]">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-[clamp(1.25rem,2.2vh+0.5vw,2.25rem)] gap-[var(--space-s-m)]">
           <div className="max-w-xl">
             <h2 className="fluid-h2 font-black text-slate-900 dark:text-white uppercase tracking-tight">
               Selected Work & Case Studies
